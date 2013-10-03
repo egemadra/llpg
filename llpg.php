@@ -62,7 +62,7 @@ if (!is_readable($pathToLLPG)) exitError("Error: '$pathToLLPG' does not exist or
 
 require_once $pathToLLPG;
 
-$opts=getopt("p:j:t:nvh");
+$opts=getopt("p:j:t:fvh");
 if (isset($opts['h'])) help();
 if (isset($opts['v'])) exit("LLPG -v ".LLPG::getVersion().".\n\n");
 
